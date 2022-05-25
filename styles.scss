@@ -40,12 +40,13 @@ body {
         .google{
             display: flex;
             flex-direction: column;
-            background-color: rgb(144, 248, 248);
+            background-color: rgb(227, 255, 255);
             margin: 10px;
             padding: 10px 10px 20px 10px;
             border-radius: 10%;
 
             a{
+                text-decoration:none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
