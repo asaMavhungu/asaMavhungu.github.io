@@ -35,13 +35,35 @@ body {
     .projects{
         align-self: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         
         .google{
             display: flex;
             flex-direction: column;
             background-color: rgb(227, 255, 255);
-            margin: 10px;
+            margin: 10px 30px;
+            padding: 10px 10px 20px 10px;
+            border-radius: 10%;
+
+            a{
+                text-decoration:none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 200px;
+                    height:200px;
+                    border-radius: 10%;
+                }
+            }
+            
+        }
+
+        .rain{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(227, 255, 255);
+            margin: 10px 30px;
             padding: 10px 10px 20px 10px;
             border-radius: 10%;
 
