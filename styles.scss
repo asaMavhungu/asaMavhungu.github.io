@@ -1,5 +1,6 @@
 html{
     width: 100vw;
+    height: 100vh;
     
 }
 
@@ -29,6 +30,15 @@ body {
             align-self: center;
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            width: 100VW;
+            flex-wrap: wrap;
+
+            img{
+                max-width: 95%;
+                height: auto;
+                padding:10px;
+            }
         }
     }
 
@@ -36,6 +46,9 @@ body {
         align-self: center;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        background-color: rgb(31, 27, 27);
+        width: 100vw;
         
         .google{
             display: flex;
@@ -54,6 +67,8 @@ body {
                     width: 200px;
                     height:200px;
                     border-radius: 10%;
+                    max-width: 100%;
+                    height: auto;
                 }
             }
             
@@ -76,6 +91,8 @@ body {
                     width: 200px;
                     height:200px;
                     border-radius: 10%;
+                    max-width: 100%;
+                    height: auto;
                 }
             }
             
