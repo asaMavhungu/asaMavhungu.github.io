@@ -10,7 +10,7 @@ body {
   background-color: rgb(31, 27, 27);
   /*  Margin needs to be set from 8px default to 0
           this is to make sure that viewport fuctions as expected.
-      */
+  */
   margin: 0;
   padding: 0;
 }
