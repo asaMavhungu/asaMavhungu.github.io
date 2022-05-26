@@ -1,6 +1,8 @@
 html{
-    width: 100vw;
+
     height: 100vh;
+    margin: 0;
+    padding: 5;
     
 }
 
@@ -8,8 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(31, 27, 27);
-    width: 100vw;
-    margin: 0 0;
+
+    /*  Margin needs to be set from 8px default to 0
+            this is to make sure that viewport fuctions as expected.
+        */
+    margin: 0;
+    padding: 0;
     
 
     .navbar{
@@ -18,9 +24,6 @@ body {
     .heading{
         height: 500px;
         background-color: rgb(31, 27, 27);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -31,7 +34,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 100VW;
+            width: 95VW;
             flex-wrap: wrap;
 
             img{
