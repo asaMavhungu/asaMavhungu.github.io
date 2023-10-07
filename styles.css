@@ -94,14 +94,15 @@ iframe {
 
 /* Footer with social links */
 .footer {
-    background-color: #1e1e1e;
+
+    background-color:#61afef62;
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
 .footer a {
-    color: #ddd;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
     font-size: 18px;
