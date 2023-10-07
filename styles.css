@@ -6,7 +6,7 @@ body, h1, p, div {
 
 /* Basic styling for the whole page */
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Cascadia Mono', monospace;
     background-color: #1e1e1e;
     color: #fff;
     margin: 0;
@@ -96,7 +96,7 @@ iframe {
 .footer {
     background-color: #1e1e1e;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
 }
 
