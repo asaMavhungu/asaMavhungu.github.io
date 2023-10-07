@@ -121,7 +121,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #61afef; /* Color of the scrollbar thumb */
     background-color: #4287f5; /* Darker blue color */
-    border-radius: 4px; /* Rounded corners for the thumb */
+
 }
 
 body::-webkit-scrollbar-thumb:hover {
