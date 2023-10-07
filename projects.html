@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <!-- Your Projects Content -->
+	<div class="code-start">
+
+    </div>
+
+
+    <div class="content-container">
+        <div class="text-container">
+
+
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h1 class="huge-text">Projects</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- Project 1 -->
+					<div class="col-md-6">
+						<div class="project">
+							
+							<h2>Rain Animation Project</h2>
+
+							<p class="subtitle">July 2020 - August 2020. Computer Graphics. Python Pygame</p>
+							<img src="./pygame_logo.png" alt="Project 1 Image">
+							<p class="description">Developed an animated rain scene with random raindrop behavior. Demonstrated the ability to manipulate graphics and create engaging visual effects. Undertaken as a learning experience while still new to programming, showcasing dedication to skill development and creative exploration.</p>
+							<a href="https://github.com/asaMavhungu/Rain-in-python" target="_blank">GitHub Link</a>
+						</div>
+					</div>
+
+					<!-- Project 2 -->
+					<div class="col-md-6">
+						<div class="project">
+							<h2>Google Clone</h2>
+							<p class="subtitle">April 2022. Web development .HTML. SCSS/SASS</p>
+							<img src="./google_logo.png" alt="Google Clone Project Image">
+							<p class="description">Created a Google clone that replicates the frontend of the popular search engine. This project allows users to perform web searches and redirects them to Google's search results. Implemented responsive design for various screen sizes and browsers, providing a seamless search experience. Demonstrated proficiency in HTML, CSS, and JavaScript to recreate the Google user interface.</p>
+							<a href="https://github.com/your-username/google-clone" target="_blank">GitHub Link</a>
+						</div>
+					</div>
+
+					<!-- Project 3 -->
+					<div class="col-md-6">
+						<div class="project">
+							<h2>Dice Roller App</h2>
+							<p class="subtitle">September 2022. Android Development. Kotlin</p>
+							<img src="./Android_Studio_icon.png" alt="Dice Roller App Project Image">
+							<p class="description">Designed and developed the "Dice Roller" Android app using Kotlin and Android Studio. The app simulates rolling two dice and calculates the product of their values. It provides instant feedback, indicating whether you win when the product is even. Implemented a user-friendly and responsive user interface for seamless interaction. Demonstrated proficiency in Android app development with Kotlin.</p>
+							<a href="https://github.com/your-username/dice-roller-app" target="_blank">GitHub Link</a>
+						</div>
+					</div>
+					
+
+					<!-- Project 4 -->
+					<div class="col-md-6">
+						<div class="project">
+							<h2>Grapho Numbra</h2>
+							<p class="subtitle">May 2023. Machine Learning. PyTorch</p>
+							<img src="./PyTorch_logo_white.png" alt="Grapho Numbra Project Image">
+							<p class="description">Developed "Grapho Numbra," a handwritten digit recognition project using PyTorch. Trained a deep learning model to accurately recognize and classify handwritten numbers. Applied techniques to preprocess and prepare the dataset for training. Demonstrated expertise in machine learning and PyTorch framework for image recognition tasks.</p>
+							<a href="https://github.com/your-username/grapho-numbra" target="_blank">GitHub Link</a>
+						</div>
+					</div>
+					
+
+					
+					<!-- Project 5 -->
+					<div class="col-md-6">
+						<div class="project">
+							
+							<h2>Syft Hackathon</h2>
+							<p class="subtitle">July 2023. Data Science. Python Numpy</p>
+							<img src="./numpy_logo.png" alt="Project 2 Image">
+							<p class="description">Achieved an impressive 83.33% data compression rate, reducing the data to one-sixth of its original size. Extracted key roulette properties to deduce winning numbers. Demonstrated strong problem-solving skills and the ability to efficiently work with complex data. Successfully tackled the challenge independently, showcasing self-reliance and technical expertise.</p>
+							<a href="https://github.com/asaMavhungu/Syft-2023-Hackathon-Round-2" target="_blank">GitHub Link</a>
+						</div>
+					</div>
+				</div>
+
+
+        </div>
+    </div>
+	
+
+	<style>
+
+
+		.project{
+			margin: 2rem;
+		}
+		/* Dark mode styles for the GitHub link */
+		.project a {
+			display: inline-block;
+			padding: 5px 10px;
+			color: #777; /* Grayish text color */
+			text-decoration: none; /* Remove underline */
+			border: 2px solid #777; /* Purple outline */
+			border-radius: 10px; /* Round corners */
+			transition: color 0.3s, border-color 0.3s; /* Smooth transition */
+			outline: none; /* Remove the default focus outline */
+		}
+	
+		.project a:hover {
+			color: #fff; /* White text color on hover */
+
+			border-color: #fff; /* Purple outline on hover */
+		}
+	</style>
+
+
+	<style>
+
+	
+		.project img {
+			max-width: 120px; /* Set a maximum width for the image */
+			height: auto; /* Maintain aspect ratio */
+			margin-right: 10px; /* Add some spacing between the image and text */
+		}
+
+	
+
+	</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function () {
+		// Get the code-start and code-end elements
+		const $codeStart = $('.code-start');
+		const divHeight = $('.content-container')[0].scrollHeight;
+
+		// Calculate the number of lines based on the viewport height
+		const windowHeight = divHeight;
+		const lineHeight = 23; // Change this value as needed for your desired line height
+		const numberOfLines = Math.floor(windowHeight / lineHeight);
+			
+		// Generate and append line numbers
+		for (let i = 1; i <= numberOfLines; i++) {
+			const $lineNumber = $('<span></span>');
+			$lineNumber.text(i);
+			$lineNumber.addClass('line-number');
+			$codeStart.append($lineNumber);
+		}
+	});
+</script>
+</body>
+</html>

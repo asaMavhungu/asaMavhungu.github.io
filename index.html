@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>  
-        <title>Homepage - Asakundwi Mavhungu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles1.css">
-        <link rel="icon" type="image/png" href="icon.png">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSCode-Like Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <style>
+        /* Define fade-in and fade-out classes */
+        .fade-in {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
 
-    <body>
-        <div class="navbar"></div>
-        <div class="heading">
-            <div class="nametag">
-                <img src="Asa.png" alt="">
-                <img src="mavh.png" alt="">
-            </div>    
+        .fade-out {
+            opacity: 0;
+
+        }
+    </style>
+	<!-- Top bar with tabs -->
+	<div class="top-bar">
+        <div class="title-bar">
+            VSCode-Like Web Page
         </div>
+		<div class="top-bar-inner">
+			<div class="tabs">
+				<div class="tab active" data-page="home.html">home.html</div>
+				<div class="tab" data-page="aboutme.html">aboutme.html</div>
+				<div class="tab" data-page="projects.html">projects.html</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Main content area -->
+    <div class="editor-container">
+        <iframe src="home.html" frameborder="0" id="iframe-content"></iframe>
+    </div>
+
+    <!-- Bottom bar with social links -->
+
+    <!--
+    <div class="status-bar">
+        <div class="status-item">UTF-8</div>
+        <div class="status-item">Language: HTML</div>
+        <div class="status-item">Line: 1</div>
+        <div class="status-item">Col: 1</div>
+    </div>
+    -->
+
+    <!-- Footer with social links -->
+    <div class="footer">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+    </div>
+
+    <!-- JavaScript to handle tab switching -->
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const iframeContent = document.getElementById('iframe-content');
         
-        <div class="projects">
-
-            <div class="google">
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const page = tab.getAttribute('data-page');
+        
+                // Remove 'active' class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+        
+                // Add 'active' class to the clicked tab
+                tab.classList.add('active');
+        
+                // Fade out the iframe content
+                iframeContent.classList.add('fade-out');
                 
-                <a href="/Google-clone/index.html">
-                    <img src="gog.png" alt="">  
-                    Google Clone
-                </a>
-            </div>
-
-            <div class="rain">
-                
-                <a href="https://github.com/asaMavhungu/Rain-in-python">
-                    <img src="rain.png" alt="">   
-                    Python Rain Animation
-                </a>
-            </div>
-            
-        </div>
-    </body>
+                // Wait for the fade-out transition to complete
+                setTimeout(() => {
+                    // Update the iframe source
+                    iframeContent.src = page;
+        
+                    // Fade in the iframe content
+                    iframeContent.classList.remove('fade-out');
+                    iframeContent.classList.add('fade-in');
+                }, 300); // Adjust the duration to match your CSS transition duration
+            });
+        });
+        
+    </script>
+</body>
 </html>
