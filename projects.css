@@ -86,3 +86,22 @@ body {
     bottom: 0;
     width: 2rem; /* Adjust the width as needed */
 }
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    background-color: #292929; /* Background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #61afef; /* Color of the scrollbar thumb */
+    background-color: #4287f5; /* Darker blue color */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #4287f5; /* Color of the scrollbar thumb on hover */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1e1e1e; /* Color of the scrollbar track */
+}

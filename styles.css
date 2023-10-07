@@ -6,7 +6,7 @@ body, h1, p, div {
 
 /* Basic styling for the whole page */
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Cascadia Mono', monospace;
     background-color: #1e1e1e;
     color: #fff;
     margin: 0;
@@ -59,6 +59,7 @@ body {
 .tab.active {
     background-color: #1e1e1e;
     color: #61afef; /* VS Code blue */
+    color: #4287f5; /* Darker blue color */
     box-shadow: 0px -2px 0px 0px white; /* Add a white outline to the active tab (excluding the bottom) */
 	border-bottom: 1px solid #1e1e1e; /* Add a grey border on the left side of each tab */
 }
@@ -69,6 +70,7 @@ body {
     position: relative;
 
 }
+
 
 iframe {
     width: 100%;
@@ -92,14 +94,15 @@ iframe {
 
 /* Footer with social links */
 .footer {
-    background-color: #1e1e1e;
+
+    background-color:#61afef62;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
 }
 
 .footer a {
-    color: #ddd;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
     font-size: 18px;
@@ -190,5 +193,7 @@ iframe {
 /* Add this style to center the title text within the title bar */
 .title-bar {
     text-align: center;
+    border-radius: 9px;
+    padding: 0.5rem; /* Add some padding inside the border */
 }
 
