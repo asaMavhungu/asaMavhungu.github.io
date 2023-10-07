@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="code-start">
+
+    </div>
+
+    <div class="content-container">
+        <div class="text-container">
+            <p class="small-text">Hello, I'm</p>
+            <h1 class="huge-text">Asakundwi Mavhungu</h1>
+            <p class="blue-text">A computer scientist passionate about technology and coding.</p>
+        </div>
+    </div>
+
+    <div class="code-end"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Get the code-start and code-end elements
+            const $codeStart = $('.code-start');
+            const divHeight = $('.content-container')[0].scrollHeight;
+
+            // Calculate the number of lines based on the viewport height
+            const windowHeight = divHeight;
+            const lineHeight = 23; // Change this value as needed for your desired line height
+            const numberOfLines = Math.floor(windowHeight / lineHeight);
+                
+            // Generate and append line numbers
+            for (let i = 1; i <= numberOfLines; i++) {
+                const $lineNumber = $('<span></span>');
+                $lineNumber.text(i);
+                $lineNumber.addClass('line-number');
+                $codeStart.append($lineNumber);
+            }
+        });
+    </script>
+
+</body>
+</html>
