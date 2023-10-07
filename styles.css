@@ -193,5 +193,7 @@ iframe {
 /* Add this style to center the title text within the title bar */
 .title-bar {
     text-align: center;
+    border-radius: 9px;
+    padding: 0.5rem; /* Add some padding inside the border */
 }
 
