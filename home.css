@@ -16,14 +16,15 @@ p {
 
 h1 {
     font-size: 2rem; /* Example: Twice the base font size */
+    color: #60ecff;
 }
 
 
 /* Basic styling for the whole page */
 body {
     font-family: 'Cascadia Mono', monospace;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #030d22;
+    color: #dfeef8;
     margin: 0;
     overflow: hidden;
     display: flex;
@@ -62,7 +63,7 @@ body {
 
 
 .line-number {
-    color: #888;
+    color: #ee005c;
     font-family: 'Cascadia Mono', monospace; /* Use Cascadia Mono font or your desired monospace font */
     text-align: right; /* Right-align line numbers */
     padding: 2px 5px; /* Adjust padding as needed */
@@ -76,7 +77,7 @@ body {
     display: flex; /* Use Flexbox for layout */
     flex-direction: column; /* Display items vertically */
     align-items: flex-end; /* Right-align line numbers within the containe */
-    background-color: #1e1e1e; /* Background color for line numbers */
+    background-color: #030d22; /* Background color for line numbers */
     font-family: 'Cascadia Mono', monospace; /* Use Cascadia Mono font or your desired monospace font */
     text-align: right; /* Right-align line numbers */
     padding: 10px; /* Add padding for spacing */
