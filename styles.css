@@ -18,7 +18,7 @@ body {
 
 /* Top bar with tabs */
 .top-bar {
-    background-color: #3f3f3f;
+    background-color: #15132a;
     padding: 10px 0px 0; /* Remove bottom padding */
 }
 
@@ -31,21 +31,21 @@ body {
 
 .tabs {
     display: flex;
-    border-bottom: 1px solid #1e1e1e;
-    background-color: #292929;
+    border-bottom: 1px solid #171033;
+    background-color: #030d22;
 	
 }
 
 .tab {
     padding: 8px 12px;
     cursor: pointer;
-    color: #888; /* Grey for inactive tabs */
+    color: #3e8efd; /* Grey for inactive tabs */
     transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease; /* Include border in transition */
     width: 120px; /* Fixed width for tabs */
-    border-left: 1px solid #1e1e1e; /* Add a grey border on the left side of each tab */
-	border-bottom: 1px solid #1e1e1e; /* Add a grey border on the left side of each tab */
+    border-left: 1px solid #171033; /* Add a grey border on the left side of each tab */
+	border-bottom: 1px solid #171033; /* Add a grey border on the left side of each tab */
 	/* border-top: 1px solid #1e1e1e;  Add a grey border on the left side of each tab */
-    background-color: #333;
+    background-color: #141138;
 }
 
 
@@ -57,7 +57,7 @@ body {
 }
 
 .tab.active {
-    background-color: #1e1e1e;
+    background-color: #1d1641;
     color: #61afef; /* VS Code blue */
     color: #4287f5; /* Darker blue color */
     box-shadow: 0px -2px 0px 0px white; /* Add a white outline to the active tab (excluding the bottom) */
